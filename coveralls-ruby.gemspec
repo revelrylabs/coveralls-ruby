@@ -3,17 +3,17 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'coveralls/version'
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Nick Merwin", "Wil Gieseler"]
-  gem.email         = ["nick@lemurheavy.com", "supapuerco@gmail.com"]
-  gem.description   = "A Ruby implementation of the Coveralls API."
-  gem.summary       = "A Ruby implementation of the Coveralls API."
-  gem.homepage      = "https://coveralls.io"
+  gem.authors       = ["Robert Prehn"]
+  gem.email         = ["robert@revelry.co"]
+  gem.description   = "A forked ruby implementation of the coveralls API."
+  gem.summary       = "A forked ruby implementation of the coveralls API."
+  gem.homepage      = "https://github.com/revelrylabs/coveralls-ruby"
   gem.license       = "MIT"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "coveralls"
+  gem.name          = "coveralls-revelry"
   gem.require_paths = ["lib"]
   gem.version       = Coveralls::VERSION
 
